@@ -9,7 +9,7 @@
           "foreground": "#011627",
           "leading_diamond": "\u256d\u2500\ue0b6",
           "properties": {
-            "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}  ",
+            "template": "{{ .UserName }}@{{ .HostName }} ",
             "windows": "\uf871"
           },
           "style": "diamond",
