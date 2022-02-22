@@ -83,6 +83,20 @@
       "alignment": "right",
       "segments": [
         {
+          "background": "#22da6e",
+          "foreground": "#193549",
+          "leading_diamond": "\ue0b6",
+          "properties": {
+            "discharging_icon": "\uE231 ",
+            "charging_icon": "\uE234 ",
+            "charged_icon": "\uE22F ",
+            "template": "{{ .Icon }}{{ .Percentage }}% "
+          },
+          "style": "diamond",
+          "trailing_diamond": "<transparent,#22da6e>\ue0b2</>",
+          "type": "battery"
+        },
+        {
           "background": "#8f43f3",
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b2",
