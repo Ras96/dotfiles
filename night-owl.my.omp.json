@@ -83,17 +83,6 @@
       "alignment": "right",
       "segments": [
         {
-          "background": "#d6deeb",
-          "foreground": "#011627",
-          "leading_diamond": "\ue0b6",
-          "properties": {
-            "template": "\uf489 {{ .Name }}"
-          },
-          "style": "diamond",
-          "trailing_diamond": "<transparent,#d6deeb>\ue0b2</>",
-          "type": "shell"
-        },
-        {
           "background": "#8f43f3",
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b2",
