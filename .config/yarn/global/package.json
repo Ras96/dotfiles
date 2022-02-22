@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@eslint/create-config": "^0.1.2",
+    "@stoplight/prism-cli": "^4.6.0",
+    "create-vite": "^2.8.0",
+    "create-yo": "^2.0.0",
+    "edge": "^7.10.1",
+    "eslint": "^8.2.0",
+    "live-server": "^1.2.1",
+    "prettier": "^2.5.1",
+    "prettier-plugin-md-nocjsp": "^1.2.0",
+    "vite": "^2.8.1",
+    "wscat": "^5.0.0"
+  }
+}

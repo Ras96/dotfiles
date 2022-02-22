@@ -1,0 +1,34 @@
+[user]
+	name = Ras96
+	email = asymptote.k.k@gmail.com
+[push]
+	default = current
+[core]
+	editor = vim
+	pager = delta --light
+[commit]
+	template = /home/ras/.commit_template
+[fetch]
+	prune = true
+
+[alias]
+	bprune = !git branch --merged | egrep -v '\\*|develop|main|master' | xargs git branch -d
+	co = commit
+	br = branch -a
+	e = !gitmoji -c
+	ae = !git add . && gitmoji -c
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true  # use n and N to move between diff sections
+	side-by-side = true
+	line-numbers = true
+
+[merge]
+	conflictstyle = diff3
+
+[diff]
+	colorMoved = default
+
