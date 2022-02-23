@@ -6,8 +6,6 @@
 [core]
 	editor = vim
 	pager = delta --light
-[commit]
-	template = /home/ras/.commit_template
 [fetch]
 	prune = true
 
