@@ -3,13 +3,6 @@ source (brew --prefix asdf)/libexec/asdf.fish
 
 # if which swiftenv > /dev/null; status --is-interactive; and source (swiftenv init -|psub); end
 
-# # bobthefish
-# set -g theme_display_ruby no
-# set -g theme_color_scheme base16-dark
-# set -g theme_newline_cursor yes
-# set -g theme_newline_prompt '$ '
-# set -g theme_date_format "+[%H:%M:%S]"
-
 # cron
 if ! service cron status >/dev/null 2>&1
     echo "Firing up cron daemon..." >&2
