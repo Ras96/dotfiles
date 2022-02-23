@@ -14,6 +14,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/i
 
 # 各種ツールのインストール
 # なるべくbrewで入れるようにする
+brew tap jandedobbeleer/oh-my-posh
 brew install \
   asdf \
   bat \
@@ -26,6 +27,7 @@ brew install \
   go \
   jq \
   live-server \
+  oh-my-posh \
   yarn
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
