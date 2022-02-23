@@ -19,7 +19,6 @@ SETUVAR Z_DATA_DIR:/home/ras/\x2elocal/share/z
 SETUVAR Z_EXCLUDE:\x5e/home/ras\x24
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_ar:asdf\x20reshim
-SETUVAR _fish_abbr_c:chezmoi
 SETUVAR _fish_abbr_d:docker
 SETUVAR _fish_abbr_dc:docker\x20compose
 SETUVAR _fish_abbr_g:git
