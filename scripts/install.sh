@@ -34,15 +34,15 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # レポジトリのクローン
 ghq get $DOTFILES_REPO_URL
 
+# シンボリックリンクを貼る
+source $DOTFILES_REPO/scripts/symboliclinks.sh
+
 # wsl.confのコピー
 sudo cp $(ghq root)/$DOTFILES_REPO/wsl.conf /etc/wsl.conf
 
 # asdfプラグインのインストール
 cat ~/.tool-versions | awk '{print "asdf plugin add " $1}' | sh
 asdf install
-
-# シンボリックリンクを貼る
-source $DOTFILES_REPO/scripts/symboliclinks.sh
 
 sudo sh -c "echo $(which fish) >> /etc/shells"
 sudo chsh -s $(which fish)
