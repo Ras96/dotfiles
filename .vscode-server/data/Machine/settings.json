@@ -1,0 +1,99 @@
+{
+  "C_Cpp.clang_format_style": "{BreakBeforeBraces: Attach, AllowShortIfStatementsOnASingleLine: true, AllowShortLoopsOnASingleLine: true}",
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[makefile]": {
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": false,
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 2
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "matklad.rust-analyzer"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.executorMap": {
+    "c": "gcc $fullFileName -o a.out -lm; and ./a.out",
+    "cpp": "g++ $fullFileName -o a.out -lm -D_DEBUG; and ./a.out"
+  },
+  "code-runner.preserveFocus": false,
+  "code-runner.runInTerminal": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "emmet.triggerExpansionOnTab": true,
+  "eslint.format.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "vue"
+  ],
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.ignoreLegacyWarning": true,
+  "git.suggestSmartCommit": false,
+  "gitlens.defaultDateFormat": null,
+  "go.addTags": {
+    "options": "",
+    "promptForTags": true
+  },
+  "go.editorContextMenuCommands": {
+    "debugTestAtCursor": false,
+    "fillStruct": true,
+    "generateTestForFile": true,
+    "playground": false,
+    "removeTags": true,
+    "toggleTestFile": true
+  },
+  "go.formatTool": "gofmt",
+  "go.generateTestsFlags": [
+    "-parallel",
+    "-template_dir",
+    "/home/ras/ghq/github.com/Ras96/gotests-template/templates"
+  ],
+  "go.lintTool": "golangci-lint",
+  "go.testFlags": [
+    "-cover",
+    "-shuffle=on",
+    "-race"
+  ],
+  "go.toolsManagement.autoUpdate": true,
+  "go.useLanguageServer": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+  "markdown-preview-enhanced.enableScriptExecution": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "prettier.prettierPath": "/home/ras/.config/yarn/global/node_modules/prettier",
+  "prolog.executablePath": "/home/linuxbrew/.linuxbrew/bin/swipl",
+  "redhat.telemetry.enabled": true,
+  "remote.SSH.enableAzureIntegration": true,
+  "tabnine.experimentalAutoImports": true,
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "yaml.format.singleQuote": false,
+  "yaml.schemas": {
+    "http://json.schemastore.org/swagger-2.0": [
+      "*swagger.yaml",
+      "*swagger.yml"
+    ]
+  }
+}

@@ -14,3 +14,4 @@ ln -s $DOTFILES_DIR/.prettierrc.yml $HOME/.prettierrc.yml
 ln -s $DOTFILES_DIR/.tool-versions $HOME/.tool-versions
 ln -s $DOTFILES_DIR/.vimrc $HOME/.vimrc
 ln -s $DOTFILES_DIR/.wslconfig $HOME/.wslconfig
+ln -s $DOTFILES_DIR/.vscode-server/data/Machine/settings.json $HOME/.vscode-server/data/Machine/settings.json
