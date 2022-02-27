@@ -34,14 +34,11 @@ end
 
 # gh create & ghq get
 function ghcr
-    if test (count $argv) -ge 1
-        gh repo create $argv
-        ghq get $argv[1]
-        code (ghq list --full-path -e $argv[1])
-    else
-        echo "Usage: ghcr <repo> [options...]"
-        return 1
-    end
+    set -x reponame $argv[1]
+    gh repo create $reponame --private
+    ghq get git@github.com:Ras96/$reponame.git
+    cd (ghq root)/github.com/Ras96/$reponame
+    git branch -M main
 end
 
 # ghq + fzf
