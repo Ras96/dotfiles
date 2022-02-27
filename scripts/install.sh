@@ -28,8 +28,8 @@ brew install \
   gitmoji \
   go \
   jq \
-  live-server \
   oh-my-posh \
+  tig \
   yarn
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
