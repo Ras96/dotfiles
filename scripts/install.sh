@@ -10,7 +10,9 @@ yes | sudo add-apt-repository ppa:git-core/ppa
 yes | sudo apt install build-essential curl file git procps
 
 # brewのインストール
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+if !(type "brew" > /dev/null 2>&1); then
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+fi
 
 # 各種ツールのインストール
 # なるべくbrewで入れるようにする
