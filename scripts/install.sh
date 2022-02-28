@@ -12,6 +12,7 @@ yes | sudo apt install build-essential curl file git procps
 # brewのインストール
 if !(type "brew" > /dev/null 2>&1); then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+  PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 fi
 
 # 各種ツールのインストール
