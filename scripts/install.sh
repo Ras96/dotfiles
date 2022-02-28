@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DOTFILES_REPO=Ras96/dotfiles
+DOTFILES_REPO=/home/ras/ghq/github.com/Ras96/dotfiles
 DOTFILES_REPO_URL=https://github.com/Ras96/dotfiles.git
 
 # セットアップ & 基本コマンドのインストール
@@ -42,10 +42,10 @@ fi
 ghq get $DOTFILES_REPO_URL
 
 # シンボリックリンクを貼る
-$(ghq root)/$DOTFILES_REPO/scripts/symboliclinks.sh
+$DOTFILES_REPO/scripts/symboliclinks.sh
 
 # wsl.confのコピー
-sudo cp $(ghq root)/$DOTFILES_REPO/wsl.conf /etc/wsl.conf
+sudo cp $DOTFILES_REPO/wsl.conf /etc/wsl.conf
 
 # asdfプラグインのインストール
 cat ~/.tool-versions | awk '{print "asdf plugin add " $1}' | sh
