@@ -29,6 +29,7 @@ brew install \
   gitmoji \
   go \
   jq \
+  node \
   oh-my-posh \
   tig \
   yarn
