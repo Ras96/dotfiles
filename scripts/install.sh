@@ -42,7 +42,7 @@ fi
 ghq get $DOTFILES_REPO_URL
 
 # シンボリックリンクを貼る
-source $DOTFILES_REPO/scripts/symboliclinks.sh
+$DOTFILES_REPO/scripts/symboliclinks.sh
 
 # wsl.confのコピー
 sudo cp $(ghq root)/$DOTFILES_REPO/wsl.conf /etc/wsl.conf
