@@ -1,7 +1,7 @@
 #!/bin/sh
 
 DOTFILES_REPO=Ras96/dotfiles
-DOTFILES_REPO_URL=git@github.com:$DOTFILES_REPO.git
+DOTFILES_REPO_URL=https://github.com/Ras96/dotfiles.git
 
 # セットアップ & 基本コマンドのインストール
 yes | sudo apt update
