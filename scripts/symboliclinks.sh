@@ -1,7 +1,6 @@
 #!/bin/sh
 
-DOTFILES_REPO=Ras96/dotfiles
-DOTFILES_DIR=$(ghq root)/$DOTFILES_REPO
+DOTFILES_REPO=/home/ras/ghq/github.com/Ras96/dotfiles
 
 mkdir -p $HOME/.config/
 mkdir -p $HOME/.vscode-server/data/Machine/
