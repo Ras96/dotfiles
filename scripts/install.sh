@@ -33,7 +33,10 @@ brew install \
   oh-my-posh \
   tig \
   yarn
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+  
+if !(type "rustc" > /dev/null 2>&1); then
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+fi
 
 # レポジトリのクローン
 ghq get $DOTFILES_REPO_URL
