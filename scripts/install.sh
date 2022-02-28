@@ -21,6 +21,7 @@ brew tap jandedobbeleer/oh-my-posh
 brew install \
   asdf \
   bat \
+  exa \
   fish \
   fzf \
   gh \
