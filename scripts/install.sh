@@ -31,8 +31,9 @@ brew install \
   jq \
   node \
   oh-my-posh \
-  tig \
-  yarn
+  tig
+# FIXME: nodeとの依存関係があってよくないっぽいので個別で入れる
+brew install yarn --ignore-dependencies
   
 if !(type "rustc" > /dev/null 2>&1); then
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
