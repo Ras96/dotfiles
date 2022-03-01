@@ -18,3 +18,4 @@ ln -s $DOTFILES_DIR/.vimrc $HOME/.vimrc
 ln -s $DOTFILES_DIR/.wslconfig $HOME/.wslconfig
 ln -s $DOTFILES_DIR/.vscode-server/data/Machine/settings.json $HOME/.vscode-server/data/Machine/settings.json
 ln -s $DOTFILES_DIR/.Brewfile $HOME/.Brewfile
+ln -s $DOTFILES_DIR/.night-owl.my.omp.json $HOME/.night-owl.my.omp.json
