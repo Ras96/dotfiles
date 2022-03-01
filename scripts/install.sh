@@ -87,4 +87,4 @@ echo "ras     ALL=NOPASSWD: /usr/sbin/service"
 echo "ras     ALL=NOPASSWD: /usr/sbin/hwclock"
 
 ec "Changing default shell to fish..."
-sudo chsh -s $(which fish)
+chsh -s $(which fish)
