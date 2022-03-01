@@ -42,7 +42,7 @@ source $DOTFILES_DIR/scripts/symboliclinks.sh
 if !(type "brew" > /dev/null 2>&1); then
   ec "Installing brew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
+  export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 fi
 
 ec "Installing brew packages..."
