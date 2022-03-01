@@ -53,7 +53,8 @@ asdf install
 # fi
 
 ec "Setting up /etc ..."
-sudo cp $(ghq root)/$DOTFILES_REPO/wsl.conf /etc/wsl.conf
+sudo cp $DOTFILES_DIR/etc/cron.daily/cp_ssh /etc/cron.daily/cp_ssh
+sudo cp $DOTFILES_DIR/etc/wsl.conf /etc/wsl.conf
 sudo bash -c "echo "'nameserver 8.8.8.8'" > /etc/resolv.conf"
 sudo bash -c "echo $(which fish) >> /etc/shells"
 
