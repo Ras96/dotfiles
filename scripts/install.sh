@@ -14,7 +14,16 @@ ec "Installing basic commands..."
 yes | sudo apt update
 yes | sudo apt upgrade
 yes | sudo add-apt-repository ppa:git-core/ppa
-yes | sudo apt install build-essential curl file git procps
+yes | sudo apt install \
+  apt-transport-https \
+  build-essential \
+  ca-certificates \
+  curl \
+  file \
+  git \
+  gnupg \
+  lsb-release \
+  procps
 
 if [ -d $DOTFILES_DIR ]; then
   ec "Updating dotfiles repository..."
@@ -56,6 +65,13 @@ ec "Installing VSCode extensions..."
 for ext in $(cat $DOTFILES_DIR/.vscode-extensions.txt); do
   code --install-extension $ext
 done
+
+ec "Installing Docker..."
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io
+sudo service docker start
 
 ec "Setting up /etc ..."
 sudo cp $DOTFILES_DIR/etc/cron.daily/cp_ssh /etc/cron.daily/cp_ssh
