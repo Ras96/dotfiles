@@ -52,8 +52,14 @@ asdf install
 #   /bin/bash -c "$(curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs)"
 # fi
 
+ec "Installing VSCode extensions..."
+for ext in $(cat $DOTFILES_DIR/.vscode-extensions.txt); do
+  code --install-extension $ext
+done
+
 ec "Setting up /etc ..."
 sudo cp $DOTFILES_DIR/etc/cron.daily/cp_ssh /etc/cron.daily/cp_ssh
+sudo cp $DOTFILES_DIR/etc/cron.daily/update_vscode_extensions_list /etc/cron.daily/update_vscode_extensions_list
 sudo cp $DOTFILES_DIR/etc/wsl.conf /etc/wsl.conf
 sudo bash -c "echo "'nameserver 8.8.8.8'" > /etc/resolv.conf"
 sudo bash -c "echo $(which fish) >> /etc/shells"

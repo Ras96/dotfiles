@@ -1,0 +1,5 @@
+#!/bin/bash
+
+DOTFILES_DIR=~/ghq/github.com/Ras96/dotfiles
+
+code --list-extensions > $DOTFILES_DIR/.vscode-extensions.txt
