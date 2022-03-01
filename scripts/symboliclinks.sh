@@ -2,13 +2,9 @@
 
 DOTFILES_DIR=~/ghq/github.com/Ras96/dotfiles
 
-mkdir -p $HOME/.config
 mkdir -p $HOME/.vscode-server/data/Machine
 
-ln -s $DOTFILES_DIR/.config/bat $HOME/.config/bat
-ln -s $DOTFILES_DIR/.config/fish $HOME/.config/fish
-ln -s $DOTFILES_DIR/.config/gitmoji-nodejs $HOME/.config/gitmoji-nodejs
-ln -s $DOTFILES_DIR/.config/yarn $HOME/.config/yarn
+ln -s $DOTFILES_DIR/.config $HOME/.config
 ln -s $DOTFILES_DIR/.wincmd $HOME/.wincmd
 ln -s $DOTFILES_DIR/.gitconfig $HOME/.gitconfig
 ln -s $DOTFILES_DIR/.golangci.yml $HOME/.golangci.yml
