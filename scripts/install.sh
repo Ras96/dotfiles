@@ -3,7 +3,9 @@
 DOTFILES_DIR=~/ghq/github.com/Ras96/dotfiles
 DOTFILES_REPO=git@github.com:Ras96/dotfiles.git
 
-function ec () { echo -e "\e[36;1m$1\e[m" }
+function ec () {
+  echo -e "\e[36;1m$1\e[m"
+}
 
 if [ ! -d "$HOME/.ssh" ]; then
   ec "SSH configuration is required."
