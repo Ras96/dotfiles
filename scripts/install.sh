@@ -39,10 +39,10 @@ fi
 ec "Creating symboliclinks..."
 source $DOTFILES_DIR/scripts/symboliclinks.sh
 
+export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 if !(type "brew" > /dev/null 2>&1); then
   ec "Installing brew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 fi
 
 ec "Installing brew packages..."
