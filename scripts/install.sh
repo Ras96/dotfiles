@@ -80,4 +80,9 @@ sudo cp $DOTFILES_DIR/etc/wsl.conf /etc/wsl.conf
 sudo bash -c "echo "'nameserver 8.8.8.8'" > /etc/resolv.conf"
 sudo bash -c "echo $(which fish) >> /etc/shells"
 
+ec "[INFO] exec \"sudo visudo\" and add these lines:"
+echo "ras     ALL=NOPASSWD: /usr/sbin/service"
+echo "ras     ALL=NOPASSWD: /usr/sbin/hwclock"
+
+ec "Changing default shell to fish..."
 sudo chsh -s $(which fish)
