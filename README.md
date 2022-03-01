@@ -2,9 +2,14 @@
 
 ## Installation
 
-```sh
+1. 
+```bash
 cp /mnt/c/Users/kira/.ssh/ ~/ -r
 sudo chmod 600 ~/.ssh/id_rsa
+```
+
+2. 
+```bash
 /bin/bash -c "$(curl -L https://raw.githubusercontent.com/Ras96/dotfiles/main/scripts/install.sh)"
 ```
 
