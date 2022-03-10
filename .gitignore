@@ -1,0 +1,5 @@
+.config/configstore
+.config/gh/hosts.yml
+.config/TabNine
+.config/yarn/global/node_modules
+.config/wslu
