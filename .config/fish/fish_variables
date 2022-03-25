@@ -17,7 +17,7 @@ SETUVAR Z_CMD:z
 SETUVAR Z_DATA:/home/ras/\x2elocal/share/z/data
 SETUVAR Z_DATA_DIR:/home/ras/\x2elocal/share/z
 SETUVAR Z_EXCLUDE:\x5e/home/ras\x24
-SETUVAR __fish_initialized:3100
+SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_ar:asdf\x20reshim
 SETUVAR _fish_abbr_d:docker
 SETUVAR _fish_abbr_dc:docker\x20compose
@@ -72,5 +72,6 @@ SETUVAR fish_pager_color_completion:\x1d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR fish_user_paths:/home/linuxbrew/\x2elinuxbrew/bin\x1e/home/linuxbrew/\x2elinuxbrew/sbin\x1e/home/ras/\x2ewincmd/bin\x1e/home/ras/\x2ecargo/bin\x1e/home/ras/\x2eswiftenv/bin\x1e/home/ras/\x2eswiftenv/shims\x1e/home/ras/go/bin
 SETUVAR theme_color_scheme:base16\x2dlight
