@@ -79,8 +79,8 @@ ec "Setting up /etc ..."
 sudo cp $DOTFILES_DIR/etc/cron.daily/cp_ssh /etc/cron.daily/cp_ssh
 sudo cp $DOTFILES_DIR/etc/cron.daily/update_vscode_extensions_list /etc/cron.daily/update_vscode_extensions_list
 sudo cp $DOTFILES_DIR/etc/wsl.conf /etc/wsl.conf
-sudo bash -c "echo "'nameserver 8.8.8.8'" > /etc/resolv.conf"
-sudo bash -c "echo $(which fish) >> /etc/shells"
+# sudo bash -c "echo "'nameserver 8.8.8.8'" > /etc/resolv.conf"
+cat /etc/shells | grep fish || sudo bash -c "echo $(which fish) >> /etc/shells"
 
 ec "[INFO] exec \"sudo visudo\" and add these lines:"
 echo "ras     ALL=NOPASSWD: /usr/sbin/service"
