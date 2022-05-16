@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "@eslint/create-config": "^0.1.2",
+    "@openapitools/openapi-generator-cli": "^2.4.26",
     "@stoplight/prism-cli": "^4.6.0",
+    "@stoplight/spectral-cli": "^6.3.0",
     "create-vite": "^2.8.0",
     "create-yo": "^2.0.0",
     "edge": "^7.10.1",
