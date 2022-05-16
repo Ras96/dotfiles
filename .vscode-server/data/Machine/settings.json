@@ -28,11 +28,7 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "emmet.triggerExpansionOnTab": true,
   "eslint.format.enable": true,
-  "eslint.validate": [
-    "javascript",
-    "typescript",
-    "vue"
-  ],
+  "eslint.validate": ["javascript", "typescript", "vue"],
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.ignoreLegacyWarning": true,
@@ -57,11 +53,7 @@
     "/home/ras/ghq/github.com/Ras96/gotests-template/templates2"
   ],
   "go.lintTool": "golangci-lint",
-  "go.testFlags": [
-    "-cover",
-    "-shuffle=on",
-    "-race"
-  ],
+  "go.testFlags": ["-cover", "-shuffle=on", "-race"],
   "go.toolsManagement.autoUpdate": true,
   "go.useLanguageServer": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -91,9 +83,9 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "yaml.format.singleQuote": false,
   "yaml.schemas": {
-    "http://json.schemastore.org/swagger-2.0": [
-      "*swagger.yaml",
-      "*swagger.yml"
-    ]
-  }
+    "http://json.schemastore.org/swagger-2.0": ["*swagger.yaml", "*swagger.yml"]
+  },
+  "swift.path.swift_driver_bin": "/home/linuxbrew/.linuxbrew/bin/swift",
+  "sde.languageServerMode": "sourcekit-lsp",
+  "sourcekit-lsp.serverPath": "/home/linuxbrew/.linuxbrew/bin/sourcekit-lsp"
 }
