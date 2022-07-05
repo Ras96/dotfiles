@@ -12,12 +12,6 @@
     "editor.renderWhitespace": "all",
     "editor.tabSize": 2
   },
-  "[rust]": {
-    "editor.defaultFormatter": "matklad.rust-analyzer"
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
   "code-runner.clearPreviousOutput": true,
   "code-runner.executorMap": {
     "c": "gcc $fullFileName -o a.out -lm; and ./a.out",
@@ -59,7 +53,6 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": true,
-  "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
   "markdown-preview-enhanced.enableScriptExecution": true,
   "notebook.cellToolbarLocation": {
     "default": "right",

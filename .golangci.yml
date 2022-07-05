@@ -1,10 +1,10 @@
 linters:
   enable:
-    - godox
-    # - gomnd
-    - nlreturn
+#     - godox
+#     - gomnd
+#     - nlreturn
     - ifshort
-    - predeclared
+#     - predeclared
     - revive
-    - tagliatelle
-    - wsl
+#     - tagliatelle
+#     - wsl

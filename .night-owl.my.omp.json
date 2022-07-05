@@ -95,15 +95,6 @@
           "type": "battery"
         },
         {
-          "background": "#8f43f3",
-          "foreground": "#ffffff",
-          "leading_diamond": "\ue0b2",
-          "style": "diamond",
-          "template": " \uf85a {{ round .PhysicalPercentUsed .Precision }}% ",
-          "trailing_diamond": "<transparent,#8f43f3>\ue0b2</>",
-          "type": "sysinfo"
-        },
-        {
           "background": "#303030",
           "foreground": "#3C873A",
           "leading_diamond": "\ue0b2",

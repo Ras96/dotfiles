@@ -3,3 +3,5 @@
 .config/TabNine
 .config/yarn/global/node_modules
 .config/wslu
+.config/pulse/cookie
+.config/sao-nodejs/config.json
