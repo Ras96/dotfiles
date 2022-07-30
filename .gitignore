@@ -5,3 +5,4 @@
 .config/wslu
 .config/pulse/cookie
 .config/sao-nodejs/config.json
+.config/todoist/config.json

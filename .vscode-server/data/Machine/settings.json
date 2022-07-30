@@ -4,7 +4,7 @@
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "[go]": {
-    "editor.defaultFormatter": "golang.go"
+    "editor.defaultFormatter": "golang.go-nightly"
   },
   "[makefile]": {
     "editor.detectIndentation": false,
@@ -32,23 +32,24 @@
     "options": "",
     "promptForTags": true
   },
+  "go.coverOnSingleTest": true,
+  "go.coverOnSingleTestFile": true,
+  "go.coverShowCounts": true,
   "go.editorContextMenuCommands": {
     "debugTestAtCursor": false,
-    "fillStruct": true,
     "generateTestForFile": true,
-    "playground": false,
-    "removeTags": true,
     "toggleTestFile": true
   },
   "go.formatTool": "gofmt",
-  "go.generateTestsFlags": [
-    "-parallel",
-    "-template_dir",
-    "/home/ras/ghq/github.com/Ras96/gotests-template/templates2"
-  ],
+  "go.inlayHints.compositeLiteralFields": true,
+  "go.inlayHints.constantValues": true,
+  "go.inlayHints.functionTypeParameters": true,
+  "go.inlayHints.parameterNames": true,
   "go.lintTool": "golangci-lint",
   "go.testFlags": ["-cover", "-shuffle=on", "-race"],
   "go.toolsManagement.autoUpdate": true,
+  "go.useCodeSnippetsOnFunctionSuggest": true,
+  "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
   "go.useLanguageServer": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "liveServer.settings.donotShowInfoMsg": true,
@@ -77,8 +78,5 @@
   "yaml.format.singleQuote": false,
   "yaml.schemas": {
     "http://json.schemastore.org/swagger-2.0": ["*swagger.yaml", "*swagger.yml"]
-  },
-  "swift.path.swift_driver_bin": "/home/linuxbrew/.linuxbrew/bin/swift",
-  "sde.languageServerMode": "sourcekit-lsp",
-  "sourcekit-lsp.serverPath": "/home/linuxbrew/.linuxbrew/bin/sourcekit-lsp"
+  }
 }
