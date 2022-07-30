@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR BAT_THEME:GitHub
+SETUVAR --export BUN_INSTALL:/home/ras/\x2ebun
 SETUVAR DOCKER_BUILDKIT:1
 SETUVAR EDITOR:code
 SETUVAR FZF_DEFAULT_OPTS:\x2d\x2dheight\x2040\x25
@@ -18,6 +19,7 @@ SETUVAR Z_DATA:/home/ras/\x2elocal/share/z/data
 SETUVAR Z_DATA_DIR:/home/ras/\x2elocal/share/z
 SETUVAR Z_EXCLUDE:\x5e/home/ras\x24
 SETUVAR __fish_initialized:3400
+SETUVAR _fish_abbr_c:git\x20commit\x20\x2da
 SETUVAR _fish_abbr_d:docker
 SETUVAR _fish_abbr_dc:docker\x20compose
 SETUVAR _fish_abbr_g:git
@@ -35,6 +37,9 @@ SETUVAR _fish_abbr_ll:exa\x20\x2dl
 SETUVAR _fish_abbr_ls:exa
 SETUVAR _fish_abbr_opl:eval\x20\x28op\x20signin\x20my\x29
 SETUVAR _fish_abbr_pg:openssl\x20rand\x20\x2dbase64
+SETUVAR _fish_abbr_t:todoist
+SETUVAR _fish_abbr_tl:todoist\x20\x2d\x2dcolor\x20list\x20\x2df\x20\x22\x23Inbox\x22\x20\x2dp
+SETUVAR _fish_abbr_tq:todoist\x20quick
 SETUVAR _fisher_decors_2F_fish_2D_ghq_files:/home/ras/\x2econfig/fish/functions/__ghq_repository_search\x2efish\x1e/home/ras/\x2econfig/fish/conf\x2ed/ghq_key_bindings\x2efish\x1e/home/ras/\x2econfig/fish/completions/ghq\x2efish
 SETUVAR _fisher_edc_2F_bass_files:/home/ras/\x2econfig/fish/functions/__bass\x2epy\x1e/home/ras/\x2econfig/fish/functions/bass\x2efish
 SETUVAR _fisher_jethrokuan_2F_fzf_files:/home/ras/\x2econfig/fish/functions/__fzf_cd\x2efish\x1e/home/ras/\x2econfig/fish/functions/__fzf_complete\x2efish\x1e/home/ras/\x2econfig/fish/functions/__fzf_complete_preview\x2efish\x1e/home/ras/\x2econfig/fish/functions/__fzf_find_file\x2efish\x1e/home/ras/\x2econfig/fish/functions/__fzf_get_dir\x2efish\x1e/home/ras/\x2econfig/fish/functions/__fzf_open\x2efish\x1e/home/ras/\x2econfig/fish/functions/__fzf_parse_commandline\x2efish\x1e/home/ras/\x2econfig/fish/functions/__fzf_reverse_isearch\x2efish\x1e/home/ras/\x2econfig/fish/functions/__fzfcmd\x2efish\x1e/home/ras/\x2econfig/fish/conf\x2ed/fzf\x2efish
@@ -72,5 +77,5 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/home/linuxbrew/\x2elinuxbrew/bin\x1e/home/linuxbrew/\x2elinuxbrew/sbin\x1e/home/ras/\x2ewincmd/bin\x1e/home/ras/\x2ecargo/bin\x1e/home/ras/\x2eswiftenv/bin\x1e/home/ras/\x2eswiftenv/shims\x1e/home/ras/go/bin
+SETUVAR fish_user_paths:/home/ras/\x2ebun/bin\x1e/home/linuxbrew/\x2elinuxbrew/bin\x1e/home/linuxbrew/\x2elinuxbrew/sbin\x1e/home/ras/\x2ewincmd/bin\x1e/home/ras/\x2ecargo/bin\x1e/home/ras/\x2eswiftenv/bin\x1e/home/ras/\x2eswiftenv/shims\x1e/home/ras/go/bin
 SETUVAR theme_color_scheme:base16\x2dlight

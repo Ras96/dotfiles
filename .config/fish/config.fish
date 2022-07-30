@@ -62,3 +62,7 @@ end
 # oh-my-posh
 oh-my-posh init fish --config ~/.night-owl.my.omp.json | source
 
+# bun
+set -Ux BUN_INSTALL "/home/ras/.bun"
+fish_add_path "/home/ras/.bun/bin"
+
